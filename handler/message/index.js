@@ -96,7 +96,7 @@ module.exports = msgHandler = async (client, message) => {
             case 'about':
                 const about = 
                 '*ABOUT*\n\n'+
-                '*INI ADALAH BOT AGFALIZER*\n'+
+                '*INI ADALAH BOT AGFALIZER*\n';
                 await client.reply(from, about, id)
                 break    
             case 'menu':
