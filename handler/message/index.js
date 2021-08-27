@@ -128,7 +128,7 @@ module.exports = msgHandler = async (client, message) => {
             case 'pay':
                 if(isGroupMsg){
                     if(caridata && caridata.id === groupId) {
-                        await client.sendFile(from, `./data/picture/qrismu.png`, 'qris.png', caridata.pay, id)
+                        await client.sendFile(from, `./data/picture/qr harry6.png`, 'qr harry6.png', caridata.pay, id)
                     } else if(caridata && caridata.id === groupId) {
                         await client.reply(from, caridata.pay, id)
                     } else {
