@@ -54,9 +54,9 @@ module.exports = msgHandler = async (client, message) => {
         //DEFAULT CUSTOM COMMANDS
         
         if(cariadmin) {
-            //ini merupakan fitur premium (silahkan contact Ahda untuk menggunakan fitur ini)
+            //Tidak Punya Akses
         } else if(caridata && caridata.id === groupId) {
-            //DM me on instagram : https://instagram.com/yaelahda
+            
         }
         //LOG Prefix In Terminal
         if (isCmd && !isGroupMsg) { console.log(color('[EXEC]'), color(moment(t * 1000).format('DD/MM/YY HH:mm:ss'), 'yellow'), color(`${command} [${args.length}]`), 'from', color(pushname)) }
@@ -96,10 +96,7 @@ module.exports = msgHandler = async (client, message) => {
             case 'about':
                 const about = 
                 '*ABOUT*\n\n'+
-                'Bot ini dikembangkan oleh *AHDA* menggunakan *NODEJS*\n'+
-                'Jika kamu berminat menyewa BOT Admin, silahkan hubungi:\n'+
-                'WA : 081237270808\nDirect: wa.me/6281237270808\n'+
-                'IG : https://instagram.com/yaelahda';
+                '*INI ADALAH BOT AGFALIZER*\n'+
                 await client.reply(from, about, id)
                 break    
             case 'menu':
@@ -122,16 +119,9 @@ module.exports = msgHandler = async (client, message) => {
                 } else if (isGroupMsg === false) {
                     const menuperson = 
                     `Halo *${pushname}*, Terimakasih telah menghubungi Admin BOT\n`+
-                    'Bot ini dikembangkan oleh *AHDA* menggunakan bahasa Pemrograman *NODEJS*\n'+
-                    'Bot Ini sangat cocok untuk kamu yang mempunyai Group Jualan, Jasa Topup, Reseller dll. untuk menampilkan list harga di Groupmu.\n\n'+
-                    'Untuk contoh botnya silahkan join https://chat.whatsapp.com/LwiyU0cr26dCXyMOEllvov\n\n'+
-                    'Jika kamu berminat menyewa BOT Admin, silahkan hubungi:\n'+
-                    'WA : 081237270808\nDirect: wa.me/6281237270808\n'+
-                    'IG : https://instagram.com/yaelahda\n\n'+
-                    'Untuk Biaya Sewa BOT adalah *25k/bulan*';
                     client.sendText(from, menuperson)
                 } else {
-                    client.reply(from, 'Maaf Group ini belum Terdaftar oleh Admin BOT\n\nsilahkan ketik: /daftar', id)
+                    client.reply(from, 'Maaf Group ini belum Terdaftar oleh Admin BOT', id)
                 }
                 break
             case 'payment':
