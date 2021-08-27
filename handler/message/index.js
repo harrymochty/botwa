@@ -118,7 +118,7 @@ module.exports = msgHandler = async (client, message) => {
                     client.reply(from, listmenuadmin, id)
                 } else if (isGroupMsg === false) {
                     const menuperson = 
-                    `Halo *${pushname}*, Terimakasih telah menghubungi Admin BOT\n`+
+                    `Halo *${pushname}*, Terimakasih telah menghubungi Admin BOT\n`;
                     client.sendText(from, menuperson)
                 } else {
                     client.reply(from, 'Maaf Group ini belum Terdaftar oleh Admin BOT', id)
